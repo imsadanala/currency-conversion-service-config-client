@@ -1,4 +1,4 @@
-package com.ss.microservices.dto;
+package com.ss.dto;
 
 import java.math.BigDecimal;
 
@@ -17,7 +17,7 @@ public class CurrencyConversion {
 	}
 
 	public CurrencyConversion(Long id, String from, String to, BigDecimal conversionMultiple, Integer quantity,
-			BigDecimal totalCalculatedAmount) {
+			BigDecimal totalCalculatedAmount, String port) {
 		super();
 		this.id = id;
 		this.from = from;
@@ -25,6 +25,7 @@ public class CurrencyConversion {
 		this.conversionMultiple = conversionMultiple;
 		this.quantity = quantity;
 		this.totalCalculatedAmount = totalCalculatedAmount;
+		this.port = port;
 	}
 
 	public Long getId() {
